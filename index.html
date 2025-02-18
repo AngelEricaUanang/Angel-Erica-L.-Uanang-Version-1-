@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Erica L. Uanang Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Uanang <span>Angel Erica</span></div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#academics">Academics</a>
+                <a href="#testimonials">Testimonial</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+    </nav>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <h2 class="glowing-title">Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <img src="testimonial1.jpg" alt="Testimonial Image" class="testimonial-image">
+                <p>"This is an amazing portfolio!"</p>
+                <span class="testimonial-author">- John Doe</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="testimonial2.jpg" alt="Testimonial Image" class="testimonial-image">
+                <p>"Great work and beautiful design."</p>
+                <span class="testimonial-author">- Jane Smith</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="testimonial3.jpg" alt="Testimonial Image" class="testimonial-image">
+                <p>"Incredible attention to detail and creativity."</p>
+                <span class="testimonial-author">- Mark Johnson</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Basic Reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Glowing Title Animation */
+.glowing-title {
+    font-size: 2.5rem;
+    color: aqua;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua;
+    }
+    to {
+        text-shadow: 0 0 20px cyan, 0 0 30px cyan, 0 0 50px cyan;
+    }
+}
+
+   /* Testimonial Section */
+#testimonials {
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    box-shadow: 0 0 20px aqua;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px aqua;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: aqua;
+    text-shadow: 0 0 10px aqua;
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        padding: 20px;
+    }
+}
+</style>
+
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="about.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Angel Erica</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm  <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"><br>"The only person you are destined to become<br> is the person you decide to be." <br><br> 
+                    "Optimism is the faith that leads to achievement.<br> Nothing can be done without hope and confidence."<br><br></p>
+                <div class="social-links">
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com/angel.uanang" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://github.com/AngelEricaUanang" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/@angelerica_05" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@angelerica_14" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Know Me More!</button>
+                </div>
+            </div>
+        </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="about.jpg" alt="About Me">
+            </div>
+            <div class="about-text-container">
+                <article>
+                    <h2>About Me</h2>
+                    <h3>My Personal Background</h3>
+                    <blockquote>Birthday:  December 05,2002 <br><br> Age:  21 <br><br> Address:  San Jose,Baggao,Cagayan <br><br>
+                        Degree:  Bachelor of Science in Information Technology <br><br> Guardian: Mary Ann B. Sales & Marlyne L. Uanang <br></blockquote>
+                    <button>More About Me</button>
+                </article>
+            </div>
+        </div>
+        <footer class="small-footer">
+            <p>&copy; 2025 Angel Erica Luis Uanang</p>
+          </footer>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i> HTML <span class="percentage">90%</span>
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i> CSS <span class="percentage">80%</span>
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i> Javascript <span class="percentage">85%</span>
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i> Python <span class="percentage">50%</span>
+                                <div class="progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <footer class="small-footer">
+            <p>&copy; 2025 Angel Erica Luis Uanang</p>
+          </footer>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="glowing-title">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="experience1.jpg" alt="Experiece Image" class="experience-image">
+                <p>""</p>
+                <span class="experience-author"> </span>
+            </div>
+            <div class="experience-card">
+                <img src="experience2.jpg" alt="Experiece Image" class="experience-image">
+                <p>""</p>
+                <span class="experience-author"> </span>
+            </div>
+            <div class="experience-card">
+                <img src="experience3.jpg" alt="Experiece Image" class="experience-image">
+                <p>""</p>
+                <span class="experience-author"> </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Basic Reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Glowing Title Animation */
+.glowing-title {
+    font-size: 2.5rem;
+    color: aqua;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua;
+    }
+    to {
+        text-shadow: 0 0 20px cyan, 0 0 30px cyan, 0 0 50px cyan;
+    }
+}
+
+   /* experience Section */
+#experience {
+    padding: 200px 100px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.experience-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    box-shadow: 0 0 20px aqua;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px aqua;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.experience-author {
+    font-weight: 600;
+    color: aqua;
+    text-shadow: 0 0 10px aqua;
+}
+
+.experience-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 20px;
+    }
+}
+</style>
+
+     <!-- Projects Section -->
+     <section id="projects">
+        <div class="projects-container">
+            <h2>My Projects</h2>
+            <div class="projects-gallery" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div class="project-item" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="project-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+                <div class="project-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+        </div>
+        <footer class="small-footer">
+            <p>&copy; 2025 Angel Erica L. Uanang</p>
+        </footer>
+    </section>
+
+    <section id="academics">
+        <h2>Academics</h2>
+        <p>My Academic journey is filled with milestones that reflect my dedication and hard work.</p>
+
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <img src="image.png" alt="">
+                <h3>Dean Lister</h3>
+                <p>"Achieving 91.65% Average Second Semester, Academic Year 2023-2024."</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="NSTP.jpg" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>NSTP Certificate</h3>
+                <p>"I Graduated from NSTP"</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="Grade 12 Grad. Pic.jpg" alt="">
+                <h3>Senior Year Graduation</h3>
+                <p>Finally! I'm done with My Grade 12</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="achievement4.png" alt="Personal Academic Achievement">
+                <h3>Personal Academic Achievement</h3>
+                <p>Personal Academic Achievement</p>
+            </div>
+        </div>
+
+        <button id="prevBtn">◀</button>
+        <button id="nextBtn">▶</button>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <p>You're Back-End Developer.Let's Work Together!</p>
+                <ul class="contact-info">
+                    <li><a href="mailto:uanangangelerica@gmail.com"><i class="fa-solid fa-envelope"></i>uanangangelerica@gmail.com</a></li>
+                    <li><a href="tel:09358418724"><i class="fa-solid fa-phone"></i>09358418724</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://facebook.com/angel.uanang" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/AngelEricaUanang" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/@angelerica_05" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@angelerica_14" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="text" placeholder="Enter Your Subject" required>
+                    <textarea placeholder="Enter Your Message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <p class="developed">Developed with Love by Angel Erica L. Uanang © 2025</p>
+                <div class="syntax"><br>
+                    <img src="about.jpg" alt="">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <footer class="small-footer">
+            <p>&copy; 2025 Angel Erica Luis Uanang</p>
+          </footer>
+    </section>
+    <script>
+        
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+               
+                sections.forEach(section => {
+                    if (section.id !== targetSection.id) {
+                        section.style.display = 'center';
+                    } else {
+                        section.style.display = 'center'; 
+                    }
+                });
+
+
+                targetSection.scrollIntoView({ behavior: 'smooth' }); 
+
+                
+                navLinks.forEach(navLink => navLink.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+       
+        document.getElementById('home').style.display = 'block';
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
